@@ -98,6 +98,7 @@ flowchart LR
     D -- accepted --> F[Reconcile vs GST portal<br/>and bank statements]
     F --> G[Write to accounting API]
     G --> H[Read back + tie-out]
+The accounting API write and read-back steps represent the original live workflow. This public repository includes the generalized extraction, validation and reconciliation components; organization-specific Zoho Books write/read-back code is intentionally excluded
     C -. every call .-> M[(Cost ledger<br/>SQLite + dashboard)]
 ```
 
