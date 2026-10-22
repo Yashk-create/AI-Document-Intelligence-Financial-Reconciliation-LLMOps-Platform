@@ -1,0 +1,34 @@
+{
+  "page": 5,
+  "invoice_no": "000105",
+  "memo_type": "CASH MEMO",
+  "date_raw": "19 APR 2025",
+  "date_iso": "2025-04-19",
+  "buyer_name": "Demo Buyer E",
+  "buyer_address": "Address Line E, Sample City",
+  "buyer_gstin": "00FFFZM5005F1ZI",
+  "state_code": "00",
+  "broker": "",
+  "despatch_through": "XX02AB5005",
+  "line_items": [
+    {
+      "s_no": 1,
+      "particulars": "M.S. Scrap",
+      "hsn_code": "7204",
+      "weight": "21.145",
+      "weight_unit": "MT",
+      "rate_per_mt": "38700",
+      "amount": "818311.50"
+    }
+  ],
+  "total": "818311.50",
+  "cgst_9": "73648.04",
+  "sgst_9": "73648.04",
+  "total_amt_gst": "147296.08",
+  "grand_total": "965607.58",
+  "amount_in_words": "Nine Lakh Sixty Five Thousand Six Hundred Seven Rupees Fifty Eight Paise Only",
+  "seller_gstin": "00TSTZV4826M1Z0",
+  "page_is_blank": false,
+  "unreadable_fields": [],
+  "extraction_notes": ""
+}

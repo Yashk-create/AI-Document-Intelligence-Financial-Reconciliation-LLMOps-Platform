@@ -1,0 +1,34 @@
+{
+  "page": 4,
+  "invoice_no": "000104",
+  "memo_type": "CREDIT MEMO",
+  "date_raw": "15 APR 2025",
+  "date_iso": "2025-04-15",
+  "buyer_name": "Demo Buyer D",
+  "buyer_address": "Address Line D, Sample City",
+  "buyer_gstin": "00EEEZP4004E1ZO",
+  "state_code": "00",
+  "broker": "",
+  "despatch_through": "XX01AB4004",
+  "line_items": [
+    {
+      "s_no": 1,
+      "particulars": "Aluminium Scrap",
+      "hsn_code": "7602",
+      "weight": "3.215",
+      "weight_unit": "MT",
+      "rate_per_mt": "152000",
+      "amount": "488680.00"
+    }
+  ],
+  "total": "488680.00",
+  "cgst_9": "43981.20",
+  "sgst_9": "43981.20",
+  "total_amt_gst": "87962.40",
+  "grand_total": "576642.40",
+  "amount_in_words": "Five Lakh Seventy Six Thousand Six Hundred Forty Two Rupees Forty Paise Only",
+  "seller_gstin": "00TSTZV4826M1Z0",
+  "page_is_blank": false,
+  "unreadable_fields": [],
+  "extraction_notes": ""
+}

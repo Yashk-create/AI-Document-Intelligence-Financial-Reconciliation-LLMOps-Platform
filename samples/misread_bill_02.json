@@ -1,0 +1,34 @@
+{
+  "page": 2,
+  "invoice_no": "000102",
+  "memo_type": "CREDIT MEMO",
+  "date_raw": "07 APR 2025",
+  "date_iso": "2025-04-07",
+  "buyer_name": "Demo Buyer B",
+  "buyer_address": "Address Line B, Sample City",
+  "buyer_gstin": "00CCCZE2002C1Z2",
+  "state_code": "00",
+  "broker": "",
+  "despatch_through": "XX02AB2002",
+  "line_items": [
+    {
+      "s_no": 1,
+      "particulars": "H.M.S. Scrap",
+      "hsn_code": "7204",
+      "weight": "22.075",
+      "weight_unit": "MT",
+      "rate_per_mt": "39250",
+      "amount": "806443.75"
+    }
+  ],
+  "total": "866443.75",
+  "cgst_9": "77979.94",
+  "sgst_9": "77979.94",
+  "total_amt_gst": "155959.88",
+  "grand_total": "1022403.63",
+  "amount_in_words": "Ten Lakh Twenty Two Thousand Four Hundred Three Rupees Sixty Three Paise Only",
+  "seller_gstin": "00TSTZV4826M1Z0",
+  "page_is_blank": false,
+  "unreadable_fields": [],
+  "extraction_notes": "Demo: a plausible-looking extraction with two misreads."
+}

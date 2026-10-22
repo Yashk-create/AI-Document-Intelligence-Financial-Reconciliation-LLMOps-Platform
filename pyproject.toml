@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["billx"]
+
+[tool.setuptools.package-data]
+billx = ["EXTRACT_SPEC.md"]
+
+[project]
+name = "handwritten-bill-extraction"
+version = "0.1.0"
+description = "Vision-LLM extraction of handwritten bills with deterministic validation and reconciliation"
+requires-python = ">=3.10"
+dependencies = [
+    "pillow>=10",
+    "numpy>=1.26",
+    "pymupdf>=1.24",
+    "openai>=1.40",
+]
+
+[project.optional-dependencies]
+gateway = ["litellm[proxy]>=1.50", "fastapi>=0.110", "uvicorn>=0.29"]
+# litellm is in dev so the tracker's integration tests run against the real library in CI
+dev = ["pytest>=8", "fastapi>=0.110", "httpx>=0.27", "litellm>=1.50"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

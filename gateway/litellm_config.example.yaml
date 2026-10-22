@@ -1,0 +1,27 @@
+# Copy to gateway/litellm_config.yaml (git-ignored) and fill in your own providers.
+# Keys are read from the environment: never paste a key into this file.
+#
+# Clients only ever ask for an alias ("vision-default", "cheap-text").
+# Re-pointing an alias at another provider is a config change, not a code change.
+# `model` uses LiteLLM's "<provider>/<model-name>" format; see the LiteLLM docs
+# for the provider prefixes it supports.
+
+model_list:
+  # Vision-capable model used for bill extraction
+  - model_name: vision-default
+    litellm_params:
+      model: <provider>/<vision-model>
+      api_key: os.environ/VISION_PROVIDER_API_KEY
+
+  # Cheaper text model for mapping and code-generation tasks
+  - model_name: cheap-text
+    litellm_params:
+      model: <provider>/<text-model>
+      api_key: os.environ/TEXT_PROVIDER_API_KEY
+
+litellm_settings:
+  callbacks:
+    - tracker_callback.tracker_handler_instance
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY

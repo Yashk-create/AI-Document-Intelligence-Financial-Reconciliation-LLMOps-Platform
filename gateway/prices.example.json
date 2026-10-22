@@ -1,0 +1,5 @@
+{
+  "_comment": "USD per million tokens. Keys are a provider model (as recorded in provider_model) or a gateway alias. Copy to prices.json, set TRACKER_PRICES_FILE, and fill in your providers' current list prices. Example values only.",
+  "openai/mock-vision-model": {"input": 2.00, "cached_input": 0.20, "output": 10.00},
+  "cheap-text": {"input": 0.20, "cached_input": 0.02, "output": 0.80}
+}
