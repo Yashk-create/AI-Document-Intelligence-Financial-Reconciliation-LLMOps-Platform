@@ -1,4 +1,6 @@
-# Handwritten Bill Extraction with LLM Validation and Cost Tracking
+# AI Document Intelligence, Financial Reconciliation & LLMOps Platform
+
+*Handwritten bill extraction with LLM validation, reconciliation, and LLM usage & cost tracking.*
 
 Two parts, built together:
 
