@@ -14,7 +14,8 @@ Two parts, built together:
    never stores prompts or identifiers. [Jump to the tracker ↓](#llm-usage-and-cost-tracker)
 
 Built for a small trading business (name withheld) whose newest records existed only as paper.
-Real bills, ledgers, identifiers, incidents and business figures are **not** in this repo.
+Real bills, ledgers and identifiers are **not** in this repo; only the headline results under
+[Results](#results) are reported.
 Everything under [`samples/`](samples/) is synthetic and visibly watermarked. Its GSTINs use state
 code `00` (which no registration has) and a PAN holder type that doesn't exist, so they cannot
 belong to a real taxpayer.
@@ -129,11 +130,13 @@ The accounting API write and read-back steps represent the original live workflo
 
 ## Results
 
-Engineering results only. Business, financial and usage figures from the live project are
-deliberately not published.
+Results on the business's real records (private; summarised from the project's reconciliation
+records, not reproducible from this repo), followed by the engineering results:
 
 | | |
 |---|---|
+| Documents digitised and booked | **155** handwritten bills and invoices (96 purchase bills + 59 sales invoices), worth approx. **₹6.6 crore** |
+| Reconciliation | sales and purchase totals reconciled to residuals of **₹0.24** and **₹0.04**: **28 paise** combined |
 | Test suite | **131 tests pass locally** with no network or API keys: a regression test for every validation bug found in review ([`tests/test_regressions.py`](tests/test_regressions.py)), and 28 tracker tests, 3 of which drive a real LiteLLM Router ([`tests/test_tracker.py`](tests/test_tracker.py), [`tests/test_tracker_litellm.py`](tests/test_tracker_litellm.py)) |
 | Demo | the deliberately misread sample is `REJECTED` (3 errors); all 5 clean samples are `ACCEPTED` |
 | Image payload | measure it on your own photos with `python run.py images <photos> <out>`, which prints the size before and after. The bundled synthetic bills are already small, so they are not a meaningful benchmark |
